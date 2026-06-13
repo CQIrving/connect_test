@@ -1,0 +1,81 @@
+export const sidebarMenus = [
+  {
+    title: '首页',
+    route: '/overview',
+    icon: 'el-icon-house',
+    color: '#c89652',
+    activeColor: '#a9742f',
+  },
+  {
+    title: '基础信息管理',
+    icon: 'el-icon-office-building',
+    color: '#2f6fdf',
+    activeColor: '#2f5fb6',
+    children: [
+      { title: '班级管理', route: '/base/class', icon: 'el-icon-office-building' },
+      { title: '学生管理', route: '/base/student', icon: 'el-icon-user-solid' },
+      { title: '教师管理', route: '/base/permission', icon: 'el-icon-user' },
+      { title: '学期计划管理', route: '/iep/manage', icon: 'el-icon-document' },
+    ],
+  },
+  {
+    title: '分校数据管理',
+    icon: 'el-icon-data-analysis',
+    color: '#0f8f85',
+    activeColor: '#08766e',
+    children: [
+      { title: '数据可视化', route: '/dashboard/overview', icon: 'el-icon-map-location' },
+      { title: '资源教室管理', route: '/dashboard/resource-rooms', icon: 'el-icon-school' },
+      { title: '资源教室巡检日志', route: '/dashboard/inspection', icon: 'el-icon-document-checked' },
+      { title: '送教上门学生管理', route: '/delivery/home-teaching', icon: 'el-icon-s-custom' },
+    ],
+  },
+  {
+    title: '评估量表管理',
+    icon: 'el-icon-document-copy',
+    color: '#b7791f',
+    activeColor: '#9a5f12',
+    children: [
+      { title: '评估列表', route: '/assessment/list', icon: 'el-icon-document-checked' },
+      { title: '评估分析', route: '/assessment/result', icon: 'el-icon-data-line' },
+    ],
+  },
+  {
+    title: '教育计划管理',
+    route: '/iep/list',
+    icon: 'el-icon-s-check',
+    color: '#6d5bd0',
+    activeColor: '#5746b0',
+  },
+  {
+    title: '教师教案管理',
+    route: '/teaching/lesson',
+    icon: 'el-icon-reading',
+    color: '#7d8c69',
+    activeColor: '#5f6f52',
+  },
+  {
+    title: '教学资源管理',
+    route: '/resources/school',
+    icon: 'el-icon-folder-opened',
+    color: '#2c91b8',
+    activeColor: '#1e7192',
+  },
+  {
+    title: '家校共育管理',
+    icon: 'el-icon-chat-line-round',
+    color: '#c45a9a',
+    activeColor: '#9f427b',
+    children: [
+      { title: '任务执行情况', route: '/family/tasks', icon: 'el-icon-s-order' },
+      { title: '通知阅读管理', route: '/family/notices', icon: 'el-icon-bell' },
+    ],
+  },
+  {
+    title: '特教AI智能体',
+    route: '/ai',
+    icon: 'el-icon-cpu',
+    color: '#7057c8',
+    activeColor: '#543cab',
+  },
+]
