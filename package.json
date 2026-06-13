@@ -10,7 +10,6 @@
     "check": "vue-tsc --noEmit -p tsconfig.json",
     "lint": "eslint . --ext .ts,.vue",
     "lint:fix": "eslint . --ext .ts,.vue --fix"
-    ###dadWDWda
   },
   "dependencies": {
     "axios": "^1.7.2",
